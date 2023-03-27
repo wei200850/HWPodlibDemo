@@ -1,0 +1,16 @@
+PODS:
+  - HWPodlibDemo (0.1.0)
+
+DEPENDENCIES:
+  - HWPodlibDemo (from `../`)
+
+EXTERNAL SOURCES:
+  HWPodlibDemo:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  HWPodlibDemo: b2c5d85aff00af726f6139df58e12498a4ac76be
+
+PODFILE CHECKSUM: 5dd3305a310d568916070c49994dddab7d8dddc9
+
+COCOAPODS: 1.12.0

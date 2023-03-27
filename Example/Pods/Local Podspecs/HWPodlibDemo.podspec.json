@@ -1,0 +1,22 @@
+{
+  "name": "HWPodlibDemo",
+  "version": "0.1.0",
+  "summary": "A short description of HWPodlibDemo.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/bihongwei/HWPodlibDemo",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "bihongwei": "wei_200850@163.com"
+  },
+  "source": {
+    "git": "https://github.com/bihongwei/HWPodlibDemo.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "HWPodlibDemo/Classes/**/*"
+}

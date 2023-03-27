@@ -28,7 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2069AE482868B6D342DBB762 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		2069AE482868B6D342DBB762 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		2C150BD7BF34077FD9C4C229 /* Pods-HWPodlibDemo_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HWPodlibDemo_Example.debug.xcconfig"; path = "Target Support Files/Pods-HWPodlibDemo_Example/Pods-HWPodlibDemo_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* HWPodlibDemo_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HWPodlibDemo_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -40,8 +40,8 @@
 		607FACE51AFB9204008FA782 /* HWPodlibDemo_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HWPodlibDemo_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		70EA0A13EE21D7F4FA569238 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		97308FEDD9FFA58978CA7829 /* HWPodlibDemo.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = HWPodlibDemo.podspec; path = ../HWPodlibDemo.podspec; sourceTree = "<group>"; };
+		70EA0A13EE21D7F4FA569238 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		97308FEDD9FFA58978CA7829 /* HWPodlibDemo.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HWPodlibDemo.podspec; path = ../HWPodlibDemo.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9B4EAB277D6D5458B6990C61 /* Pods-HWPodlibDemo_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HWPodlibDemo_Example.release.xcconfig"; path = "Target Support Files/Pods-HWPodlibDemo_Example/Pods-HWPodlibDemo_Example.release.xcconfig"; sourceTree = "<group>"; };
 		D62FCB63FFDA02B851D499D1 /* Pods_HWPodlibDemo_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HWPodlibDemo_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6FB15350C0FECB7A3788DDA /* Pods_HWPodlibDemo_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HWPodlibDemo_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -156,7 +156,6 @@
 				DDAAB0D74533F5E8213CCCB8 /* Pods-HWPodlibDemo_Tests.debug.xcconfig */,
 				E11CEADB5BC5CE8363332131 /* Pods-HWPodlibDemo_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -171,7 +170,7 @@
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				976D74D46080DC7A97FD7A0B /* [CP] Embed Pods Frameworks */,
+				4D18B3F122F5B3FDE9D81ECA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -227,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -262,6 +262,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		4D18B3F122F5B3FDE9D81ECA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HWPodlibDemo_Example/Pods-HWPodlibDemo_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/HWPodlibDemo/HWPodlibDemo.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HWPodlibDemo.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HWPodlibDemo_Example/Pods-HWPodlibDemo_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		6F92CE26054D6F34F4390AFD /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -282,24 +300,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		976D74D46080DC7A97FD7A0B /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-HWPodlibDemo_Example/Pods-HWPodlibDemo_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/HWPodlibDemo/HWPodlibDemo.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HWPodlibDemo.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HWPodlibDemo_Example/Pods-HWPodlibDemo_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C1D3B5A6FF96909A9144AB29 /* [CP] Check Pods Manifest.lock */ = {

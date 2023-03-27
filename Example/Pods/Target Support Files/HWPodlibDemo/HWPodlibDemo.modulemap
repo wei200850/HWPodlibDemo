@@ -1,0 +1,6 @@
+framework module HWPodlibDemo {
+  umbrella header "HWPodlibDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}
